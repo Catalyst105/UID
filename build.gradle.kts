@@ -114,16 +114,6 @@ allprojects {
 
     exclusiveContent {
       forRepository {
-        maven("https://repo.ranull.com/maven/ranull/")
-      }
-
-      filter {
-        includeGroup("com.ranull")
-      }
-    }
-
-    exclusiveContent {
-      forRepository {
         maven("https://jitpack.io/")
       }
 

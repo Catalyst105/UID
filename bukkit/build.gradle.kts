@@ -52,7 +52,6 @@ dependencies {
     libs.depenizen,
     libs.luckperms.api,
     libs.magic.api,
-    libs.graves,
     libs.duels,
     libs.brigadier,
     libs.yardwatch

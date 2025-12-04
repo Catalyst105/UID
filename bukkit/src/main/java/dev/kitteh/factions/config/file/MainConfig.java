@@ -2754,25 +2754,6 @@ public class MainConfig {
             }
         }
 
-        public class Graves {
-            @Comment("If true, will allow any Graves plugin graves to be opened by anyone, regardless of permissions")
-            private boolean allowAnyoneToOpenGraves = false;
-            private boolean preventGravesInSafezone = false;
-            private boolean preventGravesInWarzone = false;
-
-            public boolean isAllowAnyoneToOpenGraves() {
-                return allowAnyoneToOpenGraves;
-            }
-
-            public boolean isPreventGravesInSafezone() {
-                return preventGravesInSafezone;
-            }
-
-            public boolean isPreventGravesInWarzone() {
-                return preventGravesInWarzone;
-            }
-        }
-
         public class Magic {
             @Comment("If true, magic mobs will follow whatever pvp allowed/disallowed setting is present for the territory they're attacking into.")
             private boolean usePVPSettingForMagicMobs = false;
@@ -2831,9 +2812,6 @@ public class MainConfig {
         @Comment("General plugin support")
         private General general = new General();
 
-        @Comment("Ranull's Graves plugin")
-        private Graves graves = new Graves();
-
         private Magic magic = new Magic();
 
         @Comment("""
@@ -2847,10 +2825,6 @@ public class MainConfig {
 
         public General general() {
             return general;
-        }
-
-        public Graves graves() {
-            return graves;
         }
 
         public Magic magic() {

@@ -5,7 +5,6 @@ import dev.kitteh.factions.FPlayer;
 import dev.kitteh.factions.FPlayers;
 import dev.kitteh.factions.Faction;
 import dev.kitteh.factions.FactionsPlugin;
-import dev.kitteh.factions.integration.Graves;
 import dev.kitteh.factions.permissible.PermissibleAction;
 import dev.kitteh.factions.permissible.PermissibleActions;
 import dev.kitteh.factions.protection.Protection;
@@ -88,10 +87,6 @@ public class ListenInteract implements Listener {
 
         if (block == null) {
             return;  // clicked in air, apparently
-        }
-
-        if (Graves.allowAnyway(block)) {
-            return;
         }
 
         if (event.getAction() == Action.PHYSICAL && block.getType() == Material.FARMLAND) {
